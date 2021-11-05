@@ -1080,10 +1080,9 @@ Banner Style
 
 .main-banner .item h2 {
   font-size: 50px;
-  font-weight: ß700;
+  font-weight: 700;
   color: #ffffff;
   line-height: 72px;
-  opacity: 86%;
 }
 
 .main-banner .item h2 em {
@@ -1096,7 +1095,7 @@ Banner Style
 }
 
 .main-banner .item p {
-  margin: 20px 0px;
+  margin: 20px 4em;
 }
 
 .main-banner .item .down-buttons {

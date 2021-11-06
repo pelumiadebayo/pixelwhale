@@ -18,10 +18,9 @@ import './assets/css/owl.css'
 function App() {
   return (
     <div className="App">
-      
 
       {/* <!-- ***** Preloader Start ***** --> */}
-      {/* <div id="js-preloader" className="js-preloader">
+      <div id="js-preloader" className="js-preloader">
         <div className="preloader-inner">
           <span className="dot"></span>
           <div className="dots">
@@ -30,7 +29,7 @@ function App() {
             <span></span>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* <!-- ***** Preloader End ***** --> */}
 
       {/* <!-- ***** Header Area Start ***** --> */}
@@ -67,6 +66,7 @@ function App() {
       </header>
       {/* <!-- ***** Header Area End ***** --> */}
 
+      {/* Section one starts here*/}
       <div className="main-banner" id="top">
         <div className="container">
           <div className="row">
@@ -91,51 +91,54 @@ function App() {
                     </div>
                   </div>
                 </div>
+                <div className="col-lg-6 align-self-center mt-2">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/snYu2JUqSWs?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+      {/* Section one ends here*/}
+
+      {/* Section two starts here*/}
       <div id="mint" className="contact-us section faqcenter">
         <h2 id="heading"><em>Mint On Whale</em> </h2>
         <h6 className="mb-5">NFT best</h6>
-        <div className="container">
-          <div className="col-lg-12 align-self-center">
-            <form id="contact">
-              <div className="row">
-                <div className="col-md-6 col-sm-12">
-                  <img src={b1}></img>
-                </div>
-                <div className="col-md-6 col-sm-12">
+        <div className="col-lg-12 align-self-center">
+          <form id="contact">
+            <div className="row">
+              <div className="col-md-6">
+                <img src={b1}></img>
+              </div>
+              <div className="col-md-6 mt-1">
                 <h2>677/1000</h2>
-                  <div className="row mt-3">
-                    <div className="col-8">
-                      <div id="form">
-                        <div>Quantity</div>
-                        <div className="value-button" id="decrease"  value="Decrease Value">-</div>
-                        <input type="number" id="number" defaultValue="0" />
-                        <div className="value-button" id="increase" value="Increase Value">+</div>
-                      </div>
-                    </div>
-                    <div className="col-3">
-                      <div>
-                        <div>Price</div>
-                        <div>0 ETH</div>
-                      </div>
+                <div className="row mt-3">
+                  <div className="col-8">
+                    <div id="form">
+                      <div>Quantity</div>
+                      <div className="value-button" id="decrease" value="Decrease Value">-</div>
+                      <input type="number" id="number" defaultValue="0" />
+                      <div className="value-button" id="increase" value="Increase Value">+</div>
                     </div>
                   </div>
-                  <div className="main-blue-button-hover m-2">
-                    <a href="#mint"><i>Mint Now!</i> </a>
+                  <div className="col-3">
+                    <div>
+                      <div>Price</div>
+                      <div>0 ETH</div>
+                    </div>
                   </div>
+                </div>
+                <div className="main-blue-button-hover m-2">
+                  <a href="#mint"><i>Mint Now!</i> </a>
                 </div>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
-
       </div>
+      {/* Section two ends here*/}
 
+      {/* Section three starts here*/}
       <div id="services" className="our-services section">
         <div className="services-right-dec">
           <img src={side1} alt="" />
@@ -173,7 +176,7 @@ function App() {
                 <div className="item">
                   <h4>Discover &amp; Explore our SEO Tips</h4>
                   <div className="icon"><img src={services4} alt="" /></div>
-                  <p>Feel free to use this template for your business</p>
+                  <p>Feel free to use this  for your business</p>
                 </div>
                 <div className="item">
                   <h4>Optimizing your websites for Speed</h4>
@@ -220,29 +223,27 @@ function App() {
           </div>
         </div>
       </div>
+      {/* Section three ends here*/}
 
+      {/* Section four and five starts here*/}
       <div className="section faqcenter">
         <div className="left-image">
           <img src={roadmapleft} alt="Two Girls working together" />
         </div>
       </div>
-
       <div id="about" className="about-us section">
         <div className="container">
-
           <div className="row">
-
             <div className="col-lg-12">
               <h2 id="heading"><em>Road Map</em> </h2>
               <h6 className="mb-5">steps and how</h6>
               <div id="roadmap" className="section cairo_font">
                 <div className="container">
-
-                  <div className="row justify-content-between list_line">
-                    <div className="col-12 col-md-5 road-item">
+                  <div className="row justify-content-between list_line scroll-animations">
+                    <div className="col-12 col-md-5 road-item animated">
                       <div className="road-inner d-flex align-items-center">
                         <div>
-                          <div className="road-content">
+                          <div className="road-content ">
                             <div className="road-caption">
                               🚀 0% | Social Media Growth
                             </div>
@@ -254,7 +255,7 @@ function App() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 road-item">
+                    <div className="col-12 col-md-5 road-item animate">
                       <div className="road-inner d-flex align-items-center">
                         <div className="order-1">
                           <div className="road-content">
@@ -271,7 +272,7 @@ function App() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 road-item">
+                    <div className="col-12 col-md-5 road-item animated">
                       <div className="road-inner d-flex align-items-center">
                         <div>
                           <div className="road-content">
@@ -290,7 +291,7 @@ function App() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 road-item" style={{marginTop:'50px'}}>
+                    <div className="col-12 col-md-5 road-item animate"  style={{ marginTop: '50px' }}>
                       <div className="road-inner d-flex align-items-center">
                         <div className="order-1">
                           <div className="road-content">
@@ -309,7 +310,7 @@ function App() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 road-item" style={{marginTop:'0px'}}>
+                    <div className="col-12 col-md-5 road-item animated"  style={{ marginTop: '0px' }}>
                       <div className="road-inner d-flex align-items-center">
                         <div>
                           <div className="road-content">
@@ -327,7 +328,7 @@ function App() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-12 col-md-5 road-item" style={{marginTop:'80px'}}>
+                    <div className="col-12 col-md-5 road-item animate"  style={{ marginTop: '80px' }}>
                       <div className="road-inner d-flex align-items-center">
                         <div className="order-1">
                           <div className="road-content">
@@ -336,8 +337,8 @@ function App() {
                             </div>
                             <div className="road-description">
                               • We’ll create our own utility token, the Piñata coin.<br />
-                              • 1st exclusive Hot Cactus Club physical merch drop.(Payable with $PNT token).<br/>
-                              • $PNT will be listed on different DEX tools.<br/>
+                              • 1st exclusive Hot Cactus Club physical merch drop.(Payable with $PNT token).<br />
+                              • $PNT will be listed on different DEX tools.<br />
                               • Starting the development of Crazy Piñata, exclusive Desktop/Mobile game where you can play
                               and earn $PNT.
                             </div>
@@ -347,9 +348,11 @@ function App() {
                     </div>
                   </div>
                 </div>
+
+                {/* inter-Section between section four and five starts here*/}
+
                 <h2 className="mt-3" id="heading"><em>Why I Should Buy Whale</em> </h2>
                 <h6 className="mb-5">Awesome NFT</h6>
-
                 <div className="row">
                   <div className="col-lg-4">
                     <div className="fact-item">
@@ -379,7 +382,7 @@ function App() {
                     <div className="fact-item">
                       <div className="count-area-content">
                         <div className="icon">
-                          <img src={serviceicon3}alt="" />
+                          <img src={serviceicon3} alt="" />
                         </div>
                         <div className="count-digit">120</div>
                         <div className="count-title">Satisfied Clients</div>
@@ -393,52 +396,56 @@ function App() {
           </div>
         </div>
       </div>
+      {/* Section four and five ends here*/}
 
+      {/* Section six starts here*/}
       <div id="faq" className="section faqcenter mt-5">
-        <img src={faqpng} style={{width: '70%'}}/>
-        <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <em>Question Item #1</em>
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body road-description">
-            <p><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+        <img src={faqpng} style={{ width: '70%' }} />
+        <div className="accordion" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingOne">
+              <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <em>Question Item #1</em>
+              </button>
+            </h2>
+            <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div className="accordion-body road-description">
+                <p><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingTwo">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Question Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div className="accordion-body road-description">
+                <p><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingThree">
+              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Question Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div className="accordion-body road-description">
+                <p><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Question Item #2
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body road-description">
-            <p><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Question Item #3
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body road-description">
-            <p><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-      </div>
+      {/* Section six ends here*/}
 
+      {/* Section seven starts here*/}
       <div id="team" className="container mt-5">
-        <div className="text-center mb-3"> 
-        <h2 id="heading"><em>Team</em> </h2>
+        <div className="text-center mb-3">
+          <h2 id="heading"><em>Team</em> </h2>
           <h6 className="mb-5">Creative Members</h6>
         </div>
         <div className="row g-2 text-center">
@@ -477,11 +484,12 @@ function App() {
           </div>
         </div>
       </div>
+      {/* Section seven ends here*/}
 
+      {/*Footer Section starts here*/}
       <div className="footer-dec">
         <img src={footerdec} alt=""></img>
       </div>
-
       <footer>
         <div className="container">
           <div className="row">
@@ -544,6 +552,7 @@ function App() {
           </div>
         </div>
       </footer>
+      {/*Footer Section ends here*/}
     </div>
   );
 }

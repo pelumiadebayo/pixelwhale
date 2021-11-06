@@ -1,245 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Pixelwhale NFT">
-    <meta name="author" content="Pelumi Adebayo">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-    <title>Pixel Whales</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" type="text/javascript"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Pixelwhale NFT">
+  <meta name="author" content="Pelumi Adebayo">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Pixel Whales</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"
+    type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+    integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+    integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
 
-  <script>
-    
-(function ($) {
-	
-	"use strict";
-
-  $(document).on("click", ".naccs .menu div", function () {
-    var numberIndex = $(this).index();
-
-    if (!$(this).is("active")) {
-      $(".naccs .menu div").removeClass("active");
-      $(".naccs ul li").removeClass("active");
-
-      $(this).addClass("active");
-      $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
-
-      var listItemHeight = $(".naccs ul")
-        .find("li:eq(" + numberIndex + ")")
-        .innerHeight();
-      $(".naccs ul").height(listItemHeight + "px");
-    }
-  });
-
-	// Header Type = Fixed
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var box = $('.header-text').height();
-    var header = $('header').height();
-
-    if (scroll >= box - header) {
-      $("header").addClass("background-header");
-    } else {
-      $("header").removeClass("background-header");
-    }
-  });
+</body>
 
 
-	$('.owl-banner').owlCarousel({
-		items:1,
-		loop:true,
-		dots: true,
-		nav: false,
-		autoplay: true,
-		margin:0,
-		  responsive:{
-			  0:{
-				  items:1
-			  },
-			  600:{
-				  items:1
-			  },
-			  1000:{
-				  items:1
-			  },
-			  1600:{
-				  items:1
-			  }
-		  }
-	})
+
+<script>
+
+  (function ($) {
+
+    "use strict";
+
+    $(document).on("click", ".naccs .menu div", function () {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+        var listItemHeight = $(".naccs ul")
+          .find("li:eq(" + numberIndex + ")")
+          .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+      }
+    });
+
+    // Header Type = Fixed
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      var box = $('.header-text').height();
+      var header = $('header').height();
+
+      if (scroll >= box - header) {
+        $("header").addClass("background-header");
+      } else {
+        $("header").removeClass("background-header");
+      }
+    });
+
+
+    $('.owl-banner').owlCarousel({
+      items: 1,
+      loop: true,
+      dots: true,
+      nav: false,
+      autoplay: true,
+      margin: 0,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        },
+        1600: {
+          items: 1
+        }
+      }
+    })
 
     $('.owl-services').owlCarousel({
-        items:4,
-        loop:true,
-        dots: true,
-        nav: false,
-        autoplay: true,
-        margin:5,
-          responsive:{
-              0:{
-                  items:1
-              },
-              600:{
-                  items:2
-              },
-              1000:{
-                  items:3
-              },
-              1600:{
-                  items:4
-              }
-          }
+      items: 4,
+      loop: true,
+      dots: true,
+      nav: false,
+      autoplay: true,
+      margin: 5,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        1600: {
+          items: 4
+        }
+      }
     })
 
     $('.owl-portfolio').owlCarousel({
-        items:4,
-        loop:true,
-        dots: true,
-        nav: true,
-        autoplay: true,
-        margin:30,
-          responsive:{
-              0:{
-                  items:1
-              },
-              700:{
-                  items:2
-              },
-              1000:{
-                  items:3
-              },
-              1600:{
-                  items:4
-              }
-          }
+      items: 4,
+      loop: true,
+      dots: true,
+      nav: true,
+      autoplay: true,
+      margin: 30,
+      responsive: {
+        0: {
+          items: 1
+        },
+        700: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        1600: {
+          items: 4
+        }
+      }
     })
 
-    
-
-	// Menu Dropdown Toggle
-  if($('.menu-trigger').length){
-    $(".menu-trigger").on('click', function() { 
-      $(this).toggleClass('active');
-      $('.header-area .nav').slideToggle(200);
-    });
-  }
 
 
-  // Menu elevator animation
-  $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
-    if (window.location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && window.location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        var width = $(window).width();
-        if(width < 991) {
-          $('.menu-trigger').removeClass('active');
-          $('.header-area .nav').slideUp(200);  
-        }       
-        $('html,body').animate({
-          scrollTop: (target.offset().top) + 1
-        }, 700);
-        return false;
-      }
+    // Menu Dropdown Toggle
+    if ($('.menu-trigger').length) {
+      $(".menu-trigger").on('click', function () {
+        $(this).toggleClass('active');
+        $('.header-area .nav').slideToggle(200);
+      });
     }
-  });
 
-  $(document).ready(function () {
+
+    // Menu elevator animation
+    $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function () {
+      if (window.location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && window.location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          var width = $(window).width();
+          if (width < 991) {
+            $('.menu-trigger').removeClass('active');
+            $('.header-area .nav').slideUp(200);
+          }
+          $('html,body').animate({
+            scrollTop: (target.offset().top) + 1
+          }, 700);
+          return false;
+        }
+      }
+    });
+
+    $(document).ready(function () {
       $(document).on("scroll", onScroll);
-      
+
       //smoothscroll
       $('.scroll-to-section a[href^="#"]').on('click', function (e) {
-          e.preventDefault();
-          $(document).off("scroll");
-          
-          $('.scroll-to-section a').each(function () {
-              $(this).removeClass('active');
-          })
-          $(this).addClass('active');
-        
-          var target = this.hash,
-          menu = target;
-          var target = $(this.hash);
-          $('html, body').stop().animate({
-              scrollTop: (target.offset().top) + 1
-          }, 500, 'swing', function () {
-              window.location.hash = target;
-              $(document).on("scroll", onScroll);
-          });
-      });
-  });
+        e.preventDefault();
+        $(document).off("scroll");
 
-  function onScroll(event){
+        $('.scroll-to-section a').each(function () {
+          $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+          menu = target;
+        var target = $(this.hash);
+        $('html, body').stop().animate({
+          scrollTop: (target.offset().top) + 1
+        }, 500, 'swing', function () {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
+        });
+      });
+    });
+
+    function onScroll(event) {
       var scrollPos = $(document).scrollTop();
       $('.nav a').each(function () {
-          var currLink = $(this);
-          var refElement = $(currLink.attr("href"));
-          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-              $('.nav ul li a').removeClass("active");
-              currLink.addClass("active");
-          }
-          else{
-              currLink.removeClass("active");
-          }
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('.nav ul li a').removeClass("active");
+          currLink.addClass("active");
+        }
+        else {
+          currLink.removeClass("active");
+        }
       });
-  }
-
-
-
-	// Page loading animation
-	 $(window).on('load', function() {
-
-        $('#js-preloader').addClass('loaded');
-
-    });
-
-	
-
-	// Window Resize Mobile Menu Fix
-  function mobileNav() {
-    var width = $(window).width();
-    $('.submenu').on('click', function() {
-      if(width < 767) {
-        $('.submenu ul').removeClass('active');
-        $(this).find('ul').toggleClass('active');
-      }
-    });
-  }
-
-
-
-
-})(window.jQuery);
-    function increaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('number').value = value;
     }
-    
-    function decreaseValue() {
+
+
+
+    // Page loading animation
+    $(window).on('load', function () {
+
+      $('#js-preloader').addClass('loaded');
+
+    });
+
+
+
+    // Window Resize Mobile Menu Fix
+    function mobileNav() {
+      var width = $(window).width();
+      $('.submenu').on('click', function () {
+        if (width < 767) {
+          $('.submenu ul').removeClass('active');
+          $(this).find('ul').toggleClass('active');
+        }
+      });
+    }
+
+    //increase mint value
+    $('#increase').on('click', function () {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number').value = value;
+    });
+
+    //decrease mint value
+    $('#decrease').on('click', function () {
       var value = parseInt(document.getElementById('number').value, 10);
       value = isNaN(value) ? 0 : value;
       value < 1 ? value = 1 : '';
       value--;
       document.getElementById('number').value = value;
-    }
-  </script>
+    });
+    $(function () {
+        $('.tlt').textillate();
+    });
+
+    $(document).ready(function() {
+  // Check if element is scrolled into view
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop ;
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+  // If element is scrolled into view, fade it in
+  $(window).scroll(function() {
+    $('.scroll-animations .animated').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass('animate__animated animate__lightSpeedInLeft');
+      }
+    });
+  });
+  $(window).scroll(function() {
+    $('.scroll-animations .animate').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass('animate__animated animate__lightSpeedInRight');
+      }
+    });
+  });
+  });
+  })(window.jQuery);
+
+</script>
+
 </html>

@@ -101,9 +101,7 @@ font & reset css
       font-weight: 300
   }
   
-  .container {
-      margin-top: 20px
-  }
+  
   
   .card {
       border: none;
@@ -1055,9 +1053,9 @@ Banner Style
   opacity: .3;
 }
 
-.main-banner:before {
+/* .main-banner:before {
   content: '';
-  background-image: url(/src/assets/images/whalevideo.mp4);
+  background-image: url('https://www.youtube.com/watch?v=snYu2JUqSWs');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1065,7 +1063,7 @@ Banner Style
   top: 100px;
   width: 819px;
   height: 674px;
-}
+} */
 
 .main-banner .item {
   margin-right: 45px;
@@ -1746,7 +1744,9 @@ contact
 .value-button:hover {
   cursor: pointer;
 }
-
+#form{
+  white-space: nowrap;
+}
 #form #decrease {
   margin-right: -4px;
   border-radius: 8px 0 0 8px;
@@ -1799,7 +1799,6 @@ input[type=number]::-webkit-outer-spin-button {
 .contact-us {
   z-index: 2;
   position: relative;
-  padding-top: 120px;
   margin-top: 0px;
 }
 
@@ -1853,7 +1852,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 form#contact {
-  margin-left: -100px;
   position: relative;
   z-index: 2;
   background-image: url(./assets/images/contact-form-bg.png);
@@ -2086,9 +2084,11 @@ responsive
 }
 
 @media (max-width: 767px) {
-  .main-banner .item .down-buttons {
-    display: inline-block;
+  .faqcenter {
+    margin: auto;
+    width: 80%;
   }
+  
   .main-banner .item .down-buttons .main-blue-button {
     margin-right: 0px;
     margin-bottom: 15px;
@@ -2130,7 +2130,10 @@ responsive
       margin-bottom: 15px;
   }
   
-
+  .faqcenter {
+    margin: auto;
+    width: 80%;
+  }
   .road-inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

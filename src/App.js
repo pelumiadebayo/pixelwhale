@@ -1,3 +1,4 @@
+import Countdown from "react-countdown";
 import './App.css';
 import './assets/css/fontawesome.css'
 import logo from '../src/assets/images/default-logo.png';
@@ -91,8 +92,8 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 align-self-center mt-2">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/snYu2JUqSWs?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+                <div className="col-lg-6 align-self-center mt-3 auto-resizable-iframe">
+                  <iframe height="315" width="80%" src="https://www.youtube.com/embed/snYu2JUqSWs?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
               </div>
             </div>
           </div>
@@ -102,10 +103,15 @@ function App() {
 
       {/* Section two starts here*/}
       <div id="mint" className="contact-us section faqcenter">
-        <h2 id="heading"><em>Mint On Whale</em> </h2>
-        <h6 className="mb-5">NFT best</h6>
+      <div className="section-heading m-4">
+          <h2><em>Mint On Whale</em> </h2>
+          <h6>NFT best</h6>
+         </div>
         <div className="col-lg-12 align-self-center">
           <form id="contact">
+            <div className="box glowing m-1" style={{fontWeight:'800'}}>
+          <Countdown date={Date.now() + 210000000} />
+          </div>
             <div className="row">
               <div className="col-md-6">
                 <img src={b1}></img>
@@ -235,8 +241,10 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h2 id="heading"><em>Road Map</em> </h2>
-              <h6 className="mb-5">steps and how</h6>
+            <div className="section-heading m-4">
+                <h2><em>Road Map</em> </h2>
+                <h6>Steps and How</h6>
+                </div>
               <div id="roadmap" className="section cairo_font">
                 <div className="container">
                   <div className="row justify-content-between list_line scroll-animations">
@@ -350,9 +358,10 @@ function App() {
                 </div>
 
                 {/* inter-Section between section four and five starts here*/}
-
-                <h2 className="mt-3" id="heading"><em>Why I Should Buy Whale</em> </h2>
-                <h6 className="mb-5">Awesome NFT</h6>
+                <div className="section-heading m-4">
+                <h2><em>Why I Should Buy Whale</em> </h2>
+                <h6>Awesome NFT</h6>
+                </div>
                 <div className="row">
                   <div className="col-lg-4">
                     <div className="fact-item">
@@ -444,10 +453,11 @@ function App() {
 
       {/* Section seven starts here*/}
       <div id="team" className="container mt-5">
-        <div className="text-center mb-3">
-          <h2 id="heading"><em>Team</em> </h2>
-          <h6 className="mb-5">Creative Members</h6>
-        </div>
+        
+        <div className="section-heading m-4">
+                <h2><em>Team</em> </h2>
+                <h6>Creative Members</h6>
+                </div>
         <div className="row g-2 text-center">
           <div className="col-md-4">
             <div className="card"> <img src="https://i.imgur.com/iNFaRXx.jpg" className="img-fluid rounded" />

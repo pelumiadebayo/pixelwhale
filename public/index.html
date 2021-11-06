@@ -263,7 +263,7 @@
     var docViewBottom = docViewTop + $(window).height();
 
     var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop ;
+    var elemBottom = elemTop -10;
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
   }

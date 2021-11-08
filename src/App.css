@@ -146,10 +146,10 @@ font & reset css
       border: none;
       border-radius: 13px;
       padding: 0px;
-      width: 300px;
-      height: 400px;
+      width: 230px;
+      height: 310px;
       position: relative;
-      margin: auto;;
+      margin: auto;
   }
   
   .info {
@@ -1893,7 +1893,7 @@ form#contact {
   background-position: center center;
   background-size: cover;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  padding: 60px 120px;
+  padding: 20px 20px;
   border-radius: 20px;
 }
 

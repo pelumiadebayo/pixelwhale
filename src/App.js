@@ -60,6 +60,7 @@ function App() {
                   <span>Menu</span>
                 </a>
                 {/* <!-- ***** Menu End ***** --> */}
+                
               </nav>
             </div>
           </div>
@@ -88,6 +89,10 @@ function App() {
                         <div className="main-blue-button-hover m-1">
                           <a href="#mint"><i>Mint</i> </a>
                         </div>
+                        
+                      </div>
+                      <div className="m-1" style={{color:'white', fontWeight: '800' }}>
+                        <Countdown date={Date.now() + 210000000} />
                       </div>
                     </div>
                   </div>
@@ -109,17 +114,15 @@ function App() {
          </div>
         <div className="col-lg-12 align-self-center">
           <form id="contact">
-            <div className="box glowing m-1" style={{fontWeight:'800'}}>
-          <Countdown date={Date.now() + 210000000} />
-          </div>
+            
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-5 col-sm-12">
                 <img src={b1}></img>
               </div>
-              <div className="col-md-6 mt-1">
+              <div className="col-md-7 col-sm-12 mt-1">
                 <h2>677/1000</h2>
                 <div className="row mt-3">
-                  <div className="col-8">
+                  <div className="col-6">
                     <div id="form">
                       <div>Quantity</div>
                       <div className="value-button" id="decrease" value="Decrease Value">-</div>
@@ -127,10 +130,13 @@ function App() {
                       <div className="value-button" id="increase" value="Increase Value">+</div>
                     </div>
                   </div>
-                  <div className="col-3">
+                  <div className="col-6">
                     <div>
                       <div>Price</div>
-                      <div>0 ETH</div>
+                      <div className="pt-2">
+                        <img className="m-1" style={{ width: '1.5em'}} src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.svg" />
+                        <strong className="p-1">0</strong> 
+                        ETH</div>
                     </div>
                   </div>
                 </div>
@@ -459,7 +465,7 @@ function App() {
                 <h6>Creative Members</h6>
                 </div>
         <div className="row g-2 text-center">
-          <div className="col-md-4">
+          <div className="col">
             <div className="card"> <img src="https://i.imgur.com/iNFaRXx.jpg" className="img-fluid rounded" />
               <div className="d-flex justify-content-center align-items-center">
                 <div className="info info-yellow"> <span className="user-icons"><img src="https://i.imgur.com/1NZfd8E.png" width="30" /></span>
@@ -470,7 +476,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col">
             <div className="card"> <img src="https://i.imgur.com/4IqYoqv.jpg" className="img-fluid rounded" />
               <div className="d-flex justify-content-center align-items-center">
                 <div className="info info-green"> <span className="user-icons"><img src="https://i.imgur.com/BeuqpVv.png" width="30" /></span>
@@ -481,7 +487,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col">
             <div className="card"> <img src="https://i.imgur.com/LvZVIzy.jpg" className="img-fluid rounded" />
               <div className="d-flex justify-content-center align-items-center">
                 <div className="info info-blue"> <span className="user-icons"><img src="https://i.imgur.com/1NZfd8E.png" width="30" /></span>

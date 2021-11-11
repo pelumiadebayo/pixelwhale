@@ -116,10 +116,10 @@ function App() {
           <form id="contact">
             
             <div className="row">
-              <div className="col-md-5 col-sm-12">
+              <div className="col-md-4 col-sm-12">
                 <img src={b1}></img>
               </div>
-              <div className="col-md-7 col-sm-12 mt-1">
+              <div className="col-md-8 col-sm-12 mt-1">
                 <h2>677/1000</h2>
                 <div className="row mt-3">
                   <div className="col-6">
@@ -131,13 +131,12 @@ function App() {
                     </div>
                   </div>
                   <div className="col-6">
-                    <div>
                       <div>Price</div>
                       <div className="pt-2">
                         <img className="m-1" style={{ width: '1.5em'}} src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.svg" />
                         <strong className="p-1">0</strong> 
-                        ETH</div>
-                    </div>
+                        ETH
+                      </div>
                   </div>
                 </div>
                 <div className="main-blue-button-hover m-2">

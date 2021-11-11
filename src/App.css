@@ -314,6 +314,7 @@ p {
 img {
   width: 100%;
   overflow: hidden;
+  height: 100%;
 }
 
 /* 
@@ -811,18 +812,10 @@ header
   }
 }
 
-@media (max-width: 992px) {
-  .header-area .main-nav .nav li:last-child  ,
-  .background-header .main-nav .nav li:last-child {
-    display: none;
-  }
-  .header-area .main-nav .nav li:nth-child(6),
-  .background-header .main-nav .nav li:nth-child(6) {
-    padding-right: 0px;
-  }
-}
+
 
 @media (max-width: 767px) {
+ 
   road-item:nth-child(2) .road-inner {
     margin-top: 0px;
   }
@@ -1893,7 +1886,7 @@ form#contact {
   background-position: center center;
   background-size: cover;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  padding: 20px 20px;
+  padding: 20px 5px;
   border-radius: 20px;
 }
 
@@ -2053,6 +2046,14 @@ responsive
 }
 
 @media (max-width: 992px) {
+  .header-area .main-nav .nav li:last-child  ,
+  .background-header .main-nav .nav li:last-child {
+    display: none;
+  }
+  .header-area .main-nav .nav li:nth-child(6),
+  .background-header .main-nav .nav li:nth-child(6) {
+    padding-right: 0px;
+  }
   .main-banner::before {
     display: none;
   }
@@ -2106,9 +2107,7 @@ responsive
     margin-left: 0px;
     margin-top: 60px;
   }
-  form#contact {
-    padding: 45px 30px;
-  }
+  
   .footer-item {
     margin-bottom: 45px;
   }

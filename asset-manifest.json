@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pixelwhale/static/css/main.5ad4edab.chunk.css",
-    "main.js": "/pixelwhale/static/js/main.4de0a474.chunk.js",
-    "main.js.map": "/pixelwhale/static/js/main.4de0a474.chunk.js.map",
+    "main.css": "/pixelwhale/static/css/main.08ac4b11.chunk.css",
+    "main.js": "/pixelwhale/static/js/main.65c175ee.chunk.js",
+    "main.js.map": "/pixelwhale/static/js/main.65c175ee.chunk.js.map",
     "runtime-main.js": "/pixelwhale/static/js/runtime-main.2b0553d2.js",
     "runtime-main.js.map": "/pixelwhale/static/js/runtime-main.2b0553d2.js.map",
     "static/js/2.5cd04313.chunk.js": "/pixelwhale/static/js/2.5cd04313.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1569b639.chunk.js": "/pixelwhale/static/js/3.1569b639.chunk.js",
     "static/js/3.1569b639.chunk.js.map": "/pixelwhale/static/js/3.1569b639.chunk.js.map",
     "index.html": "/pixelwhale/index.html",
-    "static/css/main.5ad4edab.chunk.css.map": "/pixelwhale/static/css/main.5ad4edab.chunk.css.map",
+    "static/css/main.08ac4b11.chunk.css.map": "/pixelwhale/static/css/main.08ac4b11.chunk.css.map",
     "static/js/2.5cd04313.chunk.js.LICENSE.txt": "/pixelwhale/static/js/2.5cd04313.chunk.js.LICENSE.txt",
     "static/media/about-left-image.9f5a3a93.png": "/pixelwhale/static/media/about-left-image.9f5a3a93.png",
     "static/media/b1.b99cad86.jpg": "/pixelwhale/static/media/b1.b99cad86.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.2b0553d2.js",
     "static/js/2.5cd04313.chunk.js",
-    "static/css/main.5ad4edab.chunk.css",
-    "static/js/main.4de0a474.chunk.js"
+    "static/css/main.08ac4b11.chunk.css",
+    "static/js/main.65c175ee.chunk.js"
   ]
 }
